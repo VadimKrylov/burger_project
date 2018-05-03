@@ -1,0 +1,21 @@
+@mixin circle ($width, $color) {
+  width: $width;
+  height: $width;
+  border-radius: $width/2;
+  background-color: $color;
+}
+
+// responsive
+@function rem($px) {
+  @return $px / 16px+0rem;
+}
+
+@mixin icon {
+  height: rem(100px);
+  width: rem(100px);
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+}
+

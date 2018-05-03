@@ -1,0 +1,61 @@
+
+
+
+
+.best {
+  background-image: url(../img/bg/bg-best.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+
+.section__title--best {
+  color: #2f3234;
+  padding: 0;
+  margin-bottom: rem(65px)
+}
+
+
+.features__best {
+  display: flex;
+  margin-top: rem(65px);
+
+}
+
+.features__item {
+  flex-direction: column;
+  justify-content: space-between;
+  width: rem(300px);
+
+  .features__title {
+  font-family: 'lifehack';
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+  .features__text {
+    font-family: 'ubuntu';
+    color:#2f3234;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 2;
+    text-align: center;
+  }
+  
+}
+
+ .features__icon {
+   @include icon;
+ }
+
+ .features__icon--meat {
+  background-image: url(../img/best/meat.png);
+}
+
+.features__icon--hand {
+  background-image: url(../img/best/hand.png);
+}
+
+.features__icon--natural {
+  background-image: url(../img/best/natural.png);
+}
