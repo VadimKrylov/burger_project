@@ -1,15 +1,21 @@
+
+
+
+
 .hero {
-  background-image: url(../img/bg/cover-bg.png);
+  background-image: url(../img/bg/bg-hero.jpg); 
+  background-position: center center;
   background-repeat: no-repeat;
-  background-position: 50%;
   background-size: cover;
+ 
+  // background-position: 50%;
   position: relative;
 }
 
 .header {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   align-items: center;
   padding-top: 10px;
 }
@@ -21,21 +27,27 @@
 
 .nav {
   margin-right: rem(15px);
+  display: flex;
   &__list {
     margin: 0;
     padding: 0;
   }
 }
 
+.nav__list {
+  display: flex;
+  margin-right: 14px;
+}
+
 .nav__item {
-  display: inline-block;
+  display: flex;
   vertical-align: middle;
   white-space: nowrap;
+  align-items: center;
   &:after {
-    display: inline-block;
-    vertical-align: middle;
+    display: block;
     content: "";
-    @include circle (5px, #fff);
+    @include circle (4px, #fff);
     margin: 0 12px;
   }
   &:last-child::after {
@@ -50,57 +62,56 @@
   line-height: 1.42;
   text-transform: uppercase;
   text-decoration: none;
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
   &:hover {
     text-decoration: underline;
   }
 }
-// с underline transition не работает.как сделать?
+// с underline transition не работает.как сделать? udemy omnifood
 
 
-.hero-container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.hero__inner-container {
+  justify-content: flex-start;
+}
+
+.hero__container {
+  flex: 1;
   align-items: center;
+  display: flex;
 }
 
 .hero__content {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  flex-grow: 1;
+  // flex-grow: 1;
   align-items: center;
   padding-bottom: 15%;
+  // height: 100%;
 }
 
 
-.hero__img, .hero__description {
+.hero__content-img, .hero__content-text {
   flex-basis: 50%;
   display: flex;
 }
 
-.hero__description {
-  flex-direction: column;;
+.hero__burger {
+  max-width: 95%;
+}
+
+.hero__content-text {
+  flex-direction: column;
   justify-content: center;
 }
 
-.section__title {
-  font-family: 'Gagalin';
-  color: $orange;
-  font-size: rem(72px);
-  font-weight: 300;
-  line-height: 1.42;
-  margin: 0;
-  padding-top: 60px;
-}
 
-.hero__description--text {
+.hero__content-description {
   color: #fff;
   font-family: 'lifehack';
   font-size: rem(65px);
   font-weight: 400;
   line-height: 1;
 }
+

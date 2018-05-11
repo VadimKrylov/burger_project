@@ -1,0 +1,122 @@
+
+
+
+
+.team {
+  background: url(../img/bg/bg-team.jpg) center center / cover no-repeat;
+  position: relative;
+}
+
+// картинку я вставил отстойно. надо посмотреть, как сделать лучше
+
+.acco__pic-hero {
+  width: 100%;
+  height: auto;
+}
+
+.team__container {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  background: rgba(#2f3234, .93);
+
+
+}
+
+
+
+.section__title {
+  margin-bottom: rem(40px);
+
+  // &__align-rigth {
+  //   margin-left: rem(90px);
+  // }
+}
+// не работает - разобраться, почему
+
+
+.acco__trigger {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-family: 'Gagalin';
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-bottom: rem(20px);
+
+  &::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top-color: $orange;
+    border-bottom-width: 0;
+    border: 5px solid transparent;
+  }
+}
+  // треугольник не отображается. https://css-tricks.com/examples/ShapesOfCSS/ 
+
+.acco {
+  margin-left: rem(90px);
+}
+
+.acco__content {
+  display: flex;
+  height: 0;
+  overflow: hidden;
+}
+
+.acco__desc {
+  color: #fff;
+  font-size: rem(14px);
+  margin-left: rem(20px);
+  max-width: rem(230px);
+  
+  &-title {
+    margin-bottom: rem(8px);
+  }
+
+  &-text {
+    line-height: 1.8;
+  }
+}
+
+.acco__desc-title {
+  font-weight: bold;
+  margin-bottom: rem(10px);
+}
+
+.acco__pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-basis: 100%;
+  max-width: rem(100px);
+
+}
+// попробовать object-fit: cover; width:100%;
+
+.acco__item {
+  margin-bottom: rem(35px);
+}
+
+.acco__item-active {
+  .acco__content {
+    display: flex;
+    height: auto;
+
+  }
+  .acco__trigger {
+    color: $orange;
+  }
+  &::before {
+    transform: rotate(180deg);
+  }
+}
+

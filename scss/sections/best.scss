@@ -2,60 +2,77 @@
 
 
 
+
+
+
+
+
+
+
+
 .best {
-  background-image: url(../img/bg/bg-best.png);
+  background-image: url(../img/bg/bg-best.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
 }
 
-.section__title--best {
-  color: #2f3234;
-  padding: 0;
-  margin-bottom: rem(65px)
-}
 
-
-.features__best {
+.section__list {
   display: flex;
-  margin-top: rem(65px);
-
+  justify-content: space-around;
+  // margin-top: rem(65px);
 }
 
-.features__item {
-  flex-direction: column;
-  justify-content: space-between;
-  width: rem(300px);
+.best__item {
+  width: 30%;
+}
 
-  .features__title {
+.best__title {
   font-family: 'lifehack';
   font-size: 24px;
   font-weight: 400;
   text-align: center;
 }
-  .features__text {
+
+.best__text-content {
     font-family: 'ubuntu';
     color:#2f3234;
     font-size: 14px;
     font-weight: 300;
-    line-height: 2;
+    line-height: 1.5;
     text-align: center;
   }
+
+.best__pic {
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  height: 100px;
+  width: 100px;
+}
+
+  // .best__pic {
+  //   width: rem(100px);
+  //   height: rem(100px);
+
+  // }
   
-}
+// }
 
- .features__icon {
-   @include icon;
- }
+//  .features__icon {
+//    @include icon;
+//  }
 
- .features__icon--meat {
-  background-image: url(../img/best/meat.png);
-}
+//  .features__icon--meat {
+//   background-image: url(../img/best/meat.png);
+// }
 
-.features__icon--hand {
-  background-image: url(../img/best/hand.png);
-}
+// .features__icon--hand {
+//   background-image: url(../img/best/hand.png);
+// }
 
-.features__icon--natural {
-  background-image: url(../img/best/natural.png);
-}
+// .features__icon--natural {
+//   background-image: url(../img/best/natural.png);
+// }

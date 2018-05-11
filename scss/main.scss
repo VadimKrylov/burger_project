@@ -12,9 +12,17 @@
 @import "layout/base.scss";
 @import "layout/adjustments.scss";
 
+// reusable components
+
+@import "layout/btn.scss";
+@import "layout/section__title.scss";
+
 
 // sections
 
 @import "sections/best.scss";
 @import "sections/hero.scss";
+@import "sections/team.scss";
 @import "sections/feedback.scss";
+@import "sections/order.scss";
+@import "sections/map.scss";

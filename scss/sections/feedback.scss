@@ -2,14 +2,80 @@
 
 
 
+
 .feedback__list {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
+
 .feedback__item {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 50%;
   width: 25%;
-  height: 50%;  
+  filter: grayscale(1);
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    .feedback__hover {
+      opacity: 1;
+    }
+  }
 }
+
+
+
+// вот здесь нужно анимацию сделать для фото 
+// + разобраться, как правильно отобразить фотки
+
+
+
+.feedback__hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  background: rgba(0,0,0,.7);
+  transition: .3s;
+  padding-top: rem(50px);
+  padding-left: rem(25px);
+}
+
+.feedback__title {
+  font-family: 'gagalin';
+  font-size: 14px;
+  color: #fff;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.feedback__text {
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Ubuntu';
+  line-height: 2.4;
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+  padding-right: 30px;
+  padding-bottom: 12px;
+}
+
+// .feedback__list {
+//   display: flex;
+//   flex-direction: column;
+//   flex-wrap: wrap;
+//   height: 100%;
+// }
+
+// .feedback__item {
+//   width: 25%;
+//   height: 50%;  
+// }
